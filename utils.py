@@ -55,3 +55,25 @@ def bivariate_plot(ncol: int, nrow: int, data: pd.DataFrame, target: str) -> Non
     plt.tight_layout();
     plt.show();
     plt.gcf().clear();
+    
+    
+def univariate_plot(ncol: int, nrow: int, data: pd.DataFrame, target: list) -> None:
+    """
+    Plota um grid de gráficos de distribuição para as variáveis selecionadas
+    
+    Args:
+        ncol (int): número de colunas do grid
+        nrol (int): número de linhas do grid
+        data (pd.DataFrame): base de dados
+        target (list): lista de variáveis a serem plotadas
+    """
+     
+    fig, axs = plt.subplots(nrows=nrow, ncols=ncol, figsize=(16, 24))
+    axs = axs.flatten()
+    
+    for idx, var in enumerate(target):
+        sns.distplot(data[var], ax=axs[idx]);
+
+    plt.tight_layout();
+    plt.show();
+    plt.gcf().clear();
