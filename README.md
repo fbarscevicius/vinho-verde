@@ -8,10 +8,13 @@ A análise exploratória está no notebook **01_eda.ipynb** e o modelo está em 
 
 ## Como foi a definição da sua estratégia de modelagem?
 
-A estratégia foi baseada no tipo de problema (regressão) e nas características dos preditores e resposta presentes na base.
-
+A estratégia foi baseada no tipo de problema (aprendizado supervisionado) e nas características dos preditores e resposta presentes na base. Como existe correlação entre preditores, usei um modelo com regularização para evitar que os coeficientes "estourassem", prejudicando a qualidade da predição. E, por se tratar de um problema de regressão onde não haviam dados para toda a amplitude possível da resposta, considerei que um modelo linear seria a melhor opção pois é possível extrapolar a reta ajustada para prever valores que não foram observados no treino.
 
 ## Como foi definida a função de custo utilizada?
+
+A função de custo não precisou ser definida, pois é parte do modelo *Elastic Net*, não podendo ser escolhida / customizada:
+
+![](assets/elastic.png)
 
 ## Qual foi o critério utilizado na seleção do modelo final? 
 
