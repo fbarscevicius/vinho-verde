@@ -4,7 +4,7 @@ Teste realizado para a cognitivo.ai, com o objetivo de criar um modelo para esti
 
 ## Instruções
 
-A análise exploratória está no notebook **01_eda.ipynb** e o modelo está em **02_model.ipynb**. O arquivo **utils.py** contém funções auxiliares usadas na exploratória e na modelagem. As bibliotecas utilizadas estão listadas no **requirements.txt**
+A análise exploratória está no notebook **01_eda.ipynb** e o modelo está em **02_model.ipynb**. O arquivo **utils.py** contém funções auxiliares usadas na exploratória e na modelagem. As bibliotecas utilizadas estão listadas no **requirements.txt**, e a versão do Python usada foi a 3.6.8
 
 ## Como foi a definição da sua estratégia de modelagem?
 
